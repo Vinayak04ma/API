@@ -4,7 +4,7 @@ const app=express();
 const PORT =8000;
 
 
-app.get("/api/users",(req,res)=>{
+app.get("/",(req,res)=>{
     return res.json(users)
 })
 app.listen(PORT,()=>console.log(`Server Started at PORT`)
